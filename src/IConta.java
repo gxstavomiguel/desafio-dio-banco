@@ -1,6 +1,6 @@
 public class IConta  interface Conta{
 
-    public void depositar(double valor){
+    public default void depositar(double valor){
 
     }
 
