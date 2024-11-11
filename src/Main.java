@@ -4,8 +4,9 @@ public class Main {
         Cliente gustavo = new Cliente();
         Cliente mateus = new Cliente();
 
-        gustavo.setNome("Gustavo");
         mateus.setNome("Mateus");
+        gustavo.setNome("Gustavo");
+
 
         Conta cc = new ContaCorrente(gustavo);
         Conta poupanca = new ContaPoupanca(mateus);
@@ -19,6 +20,9 @@ public class Main {
         //banco.listaCli();
         cc.listarClientes();
         poupanca.listarClientes();
+
+        cc.listarClientes();
+
 
     }
 }
