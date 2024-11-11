@@ -1,4 +1,4 @@
-public class Conta implements IConta {
+public abstract class Conta implements IConta {
 
 
     private static final int AGENCIA_PADRAO = 1;
@@ -13,16 +13,17 @@ public class Conta implements IConta {
         this.numero = SEQUENCIAL++;
     }
 
-    public void depositar(double valor){
-
+    public void sacar(double valor){
+        saldo -= valor;
     }
 
-    public void sacar(double valor){
-
+    public void depositar(double valor){
+        saldo += valor;
     }
 
     public void transferir(double valor, Conta contaDestino){
-
+        this.sacar(valor);
+        contaDestino.depositar(valor);
     }
 
     public int getAgencia() {

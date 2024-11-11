@@ -1,15 +1,10 @@
-public class IConta  interface Conta{
+public interface IConta {
 
-    public default void depositar(double valor){
+    void sacar(double valor);
 
-    }
+    void depositar(double valor);
 
-    public void sacar(double valor){
+    void transferir(double valor, Conta contaDestino)
 
-    }
-
-    public void transferir(double valor, Conta contaDestino){
-
-    }
 
 }
