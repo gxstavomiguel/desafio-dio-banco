@@ -1,0 +1,6 @@
+Metas:
+
+- Rodar API.
+- Aplicar tabela de regras.
+- Criar design igual dá transportadora.
+- Adicionar json com conteúdo relacionado a transportadora.
